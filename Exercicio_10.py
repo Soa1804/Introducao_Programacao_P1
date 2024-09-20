@@ -1,0 +1,1 @@
+'''10 – Faça um programa que leia dois números e informe o menor número.'''

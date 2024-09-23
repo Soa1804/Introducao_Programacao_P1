@@ -9,3 +9,14 @@ se no estado solido. Já quando a temperatura se encontra entre 0° e 100° cels
 encontra-se no estado líquido. Por fim, quando a temperatura é superior à 100°, a água
 encontra-se no estado gasoso. Faça um programa que leia a temperatura da água e informe o
 estado da mesma.'''
+
+temperatura = float(input('Informe a temperatura atual da água: '))
+
+if temperatura < 0:
+    print('A água se encontra no estado sólido a {} graus celsius'.format(temperatura))
+
+elif temperatura >= 0 and temperatura <= 100:
+    print('A água se encontra no estado líquido a {} graus celsius'.format(temperatura))
+    
+else:
+    print('A água se encontra no estado gasoso a {} graus celsius'.format(temperatura))

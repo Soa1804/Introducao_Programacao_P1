@@ -11,3 +11,25 @@ entre Gotham City e Metrópolis é de 295Km. Essa distância foi percorrida pelo
 utilizando um dos veículos da locadora DC. Sendo assim, desenvolva um programa que informe
 quanto o Sr. Wayne gastou locando o veículo e viajando até Gotham City. Para a atividade,
 considerar o preço da gasolina igual a $0,75.'''
+
+#Para o modelo morcego
+#A cada 16km consome 1 litro de gasolina
+#O litro da gasolina está $0,75
+print('-----------------------------------------------------------')
+aluguel1 = 300
+gasolina1= 295/16 #Aqui divide-se a distância total pelo total da distância que o carro faz com 1 litro,
+#com isso será possível saber a quantidade de gasolina exata que utilizará
+valor_gasolina1 = 0.75 * gasolina1
+valor_total1 = aluguel1 + valor_gasolina1
+print('Se o senhor wayne pegar o modelo morcego ele gastará: ${:.2f}'.format(valor_total1))
+print('-----------------------------------------------------------')
+#Para o modelo vampiro voador
+#A cada 11km consome 1 litro de gasolina
+#O litro da gasolina está $0,75
+aluguel2 = 500
+gasolina2 = 295/11 #Aqui divide-se a distância total pelo total da distância que o carro faz com 1 litro,
+#com isso será possível saber a quantidade de gasolina exata que utilizará
+valor_gasolina2 = 0.75 * gasolina2
+valor_total2 = aluguel2 + valor_gasolina2
+print('Se o senhor wayne pegar o modelo vampiro voador ele gastará: ${:.2f}'.format(valor_total2))
+print('-----------------------------------------------------------')

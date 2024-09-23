@@ -21,3 +21,52 @@ primeiro número gerado for da mesma natureza do número indicado pelo usuário 
 e o segundo número for de natureza contrária o salto será considerado válido caso contrário o
 competidor queimou o salto. Vence a competição aquele que obtiver maior número no terceiro
 salto e que não tenha queimado as etapas anteriores.'''
+
+import random
+
+def verificar_natureza(num):
+    return "par" if num % 2 == 0 else "ímpar"
+
+def salto_triplo(nome_competidor):
+    numero_usuario = int(input(f"{nome_competidor}, informe um número inteiro: "))
+    natureza_usuario = verificar_natureza(numero_usuario)
+
+    # Gerar três números aleatórios menores que 100
+    saltos = [random.randint(0, 99) for _ in range(3)]
+    print(f"Saltos gerados para {nome_competidor}: {saltos}")
+
+    # Verificar se os saltos são válidos
+    if verificar_natureza(saltos[0]) == natureza_usuario:
+        print(f"O primeiro salto de {nome_competidor} é válido.")
+        if verificar_natureza(saltos[1]) != natureza_usuario:
+            print(f"O segundo salto de {nome_competidor} é válido.")
+            return saltos[2]  # Retorna o terceiro salto
+        else:
+            print(f"O segundo salto de {nome_competidor} foi queimado.")
+            return -1  # Indica que o competidor queimou o salto
+    else:
+        print(f"O primeiro salto de {nome_competidor} foi queimado.")
+        return -1
+
+# Entradas dos competidores
+competidor1 = input("Informe o nome do primeiro competidor: ")
+competidor2 = input("Informe o nome do segundo competidor: ")
+
+# Realizar os saltos
+resultado1 = salto_triplo(competidor1)
+resultado2 = salto_triplo(competidor2)
+
+# Determinar o vencedor
+if resultado1 == -1 and resultado2 == -1:
+    print("Ambos os competidores queimaram seus saltos.")
+elif resultado1 == -1:
+    print(f"{competidor2} venceu a competição!")
+elif resultado2 == -1:
+    print(f"{competidor1} venceu a competição!")
+else:
+    if resultado1 > resultado2:
+        print(f"{competidor1} venceu a competição com um salto de {resultado1}!")
+    elif resultado2 > resultado1:
+        print(f"{competidor2} venceu a competição com um salto de {resultado2}!")
+    else:
+        print("Empate!")

@@ -8,3 +8,12 @@ cotovelo até a ponta do dedo maior. Ao longo da história, principalmente devid
 estatura entre os povos, essa medida já representou valores que variam entre 43 a 56
 centímetros. Desenvolva um sistema que crie uma média entre os possíveis valores do côvado
 e informe a medida da arca em centímetros.'''
+
+soma = sum(range(43, 57))
+media = soma/2
+
+medida_comprimento = 300*media
+medida_largura = 50*media
+area_total = medida_comprimento*medida_largura
+
+print('A arca de Noé tinha {} cm de comprimento, {} cm de largura e {} cm^2 de área toral'.format(medida_comprimento,medida_largura, area_total))

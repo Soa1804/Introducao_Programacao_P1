@@ -9,7 +9,7 @@ estatura entre os povos, essa medida já representou valores que variam entre 43
 centímetros. Desenvolva um sistema que crie uma média entre os possíveis valores do côvado
 e informe a medida da arca em centímetros.'''
 
-soma = sum(range(43, 57))
+soma = ((43+56)*14)/2 #usando a fórmula de progressão aritmética que é: ((a_1+a_n)*n)/2, onde a_1 é o primeiro termo, a_n é o último e n é o número de termos
 media = soma/2
 
 medida_comprimento = 300*media

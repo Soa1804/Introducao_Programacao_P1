@@ -8,12 +8,18 @@ válida.'''
 naruto_uzumaki = int(input('Informe quantos votos o candidato Naruto Uzumaki teve: '))
 sakura_haruno = int(input('Informe quantos votos o candidato Sakura Haruno teve: '))
 shin_aburame = int(input('Informe quantos votos o candidato Shin Aburame teve: '))
-total_votos = naruto_uzumaki + sakura_haruno + shin_aburame
+votos_brancos = int(input('Digite os votos brancos: '))
+votos_nulos = int(input('Digite os votos nulos: '))
 
-if naruto_uzumaki > sakura_haruno and naruto_uzumaki > shin_aburame:
+total_votos = naruto_uzumaki + sakura_haruno + shin_aburame + votos_brancos + votos_nulos
+concorrentes_naruto = sakura_haruno+shin_aburame+votos_brancos+votos_nulos
+concorrentes_sakura = naruto_uzumaki+shin_aburame+votos_brancos+votos_nulos
+concorrentes_shin = naruto_uzumaki+sakura_haruno+votos_brancos+votos_nulos
+
+if naruto_uzumaki > concorrentes_naruto:
     print('O vencedor foi Naruto Uzumaki com {} votos'.format(naruto_uzumaki))
 
-elif sakura_haruno > naruto_uzumaki and sakura_haruno > shin_aburame:
+elif sakura_haruno > concorrentes_sakura:
     print('A vencedora foi Sakura Haruno com {} votos'.format(sakura_haruno))
     
 else:

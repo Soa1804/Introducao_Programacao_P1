@@ -22,7 +22,7 @@ e o segundo número for de natureza contrária o salto será considerado válido
 competidor queimou o salto. Vence a competição aquele que obtiver maior número no terceiro
 salto e que não tenha queimado as etapas anteriores.'''
 
-import random
+'''import random
 
 def verificar_natureza(num):
     return "par" if num % 2 == 0 else "ímpar"
@@ -69,4 +69,47 @@ else:
     elif resultado2 > resultado1:
         print(f"{competidor2} venceu a competição com um salto de {resultado2}!")
     else:
-        print("Empate!")
+        print("Empate!")'''
+
+nome_1 = input('Digite o nome do primeiro participante: ')
+nome_2 = input('Digite o nome do segundo participante: ')
+numero_1 = int(input("{}, informe um número inteiro: ").format(nome_1))
+numero_2 = int(input("{}, informe um número inteiro: ").format(nome_2))
+salto_1 = random.randint(1,99)
+passou_1 = True
+if((numero_1%2==0)and(salto_1%2==0)or(numero_1%2!=0)and(salto_1%2!=0)):
+    salto_2 = random.randint(1,99)
+    if ((numero_1%1==0)and(salto_2%2==0)or(numero_1%2!=0)and(salto_2%2!=0)):
+        salto_3 = random.randint(1,99)
+    else:
+        print('Queimou o salto 2')
+        passou_1 = false
+else:
+    print('Queimou o salto 1')
+    passou_1 = false
+
+passou_2 = True
+if((numero_2%2==0)and(salto_1%2==0)or(numero_2%2!=0)and(salto_1%2!=0)):
+    salto_2 = random.randint(1,99)
+    if ((numero_2%1==0)and(salto_2%2==0)or(numero_2%2!=0)and(salto_2%2!=0)):
+        salto_3_2 = random.randint(1,99)
+    else:
+        print('Queimou o salto 2')
+        passou_1 = false
+else:
+    print('Queimou o salto 1')
+    passou_1 = false
+
+if passou_1 and passou_2:
+    if salto_3_2<salto_3:
+        print('{} venceu').format(nome_1)
+    elif salto_3_2>salto_3:
+        print('{} venceu').format(nome_2)
+    else:
+        print('Empate!!!')
+elif passou_1:
+    print('{} venceu').format(nome_1)
+elif passou_2:
+    print('{} venceu').format(nome_2)
+else:
+    print('Nenhum salto valeu')

@@ -22,4 +22,4 @@ preco_etanol = float(input("Informe o preço do etanol: R$ "))
 resultado = combustivel_mais_economico(preco_gasolina, preco_etanol)
 
 # Exibindo o resultado
-print(f"O combustível mais econômico é: {resultado}.")
+print("O combustível mais econômico é: {}.").format(resultado)

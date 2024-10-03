@@ -28,68 +28,68 @@ if profissao == 1:
     print('Sua profissão será Médico!')
     caminho = int(input('escolha o caminho A(1) ou B(2): '))
     if caminho == 1:
-        salario = 50*(30-10)
-        print('Seu salário será de após os impostos serem cobrados: R${}'.format(salario))
+        salario = (50*20)+((50/2)*10)
+        print('Seu salário será de R${} após os impostos serem cobrados'.format(salario))
     else:
-        salario = 50*(25-5)
-        print('Seu salário será de após os impostos serem cobrados: R${}'.format(salario))
+        salario = (50*20)+((50/2)*5)
+        print('Seu salário será de R${} após os impostos serem cobrados'.format(salario))
 
 elif profissao == 2:
     print('Sua profissão será Jornalista!')
     caminho = int(input('escolha o caminho A(1) ou B(2): '))
     if caminho == 1:
-        salario = 24*(30-10)
-        print('Seu salário será de após os impostos serem cobrados: R${}'.format(salario))
+        salario = (24*20)+((24/2)*10)
+        print('Seu salário será de R${} após os impostos serem cobrados'.format(salario))
     else:
-        salario = 24*(25-5)
-        print('Seu salário será de após os impostos serem cobrados: R${}'.format(salario))
+        salario = (24*20)+((24/2)*5)
+        print('Seu salário será de R${} após os impostos serem cobrados'.format(salario))
     
 elif profissao == 3:
     print('Sua profissão será Advogado!')
     caminho = int(input('escolha o caminho A(1) ou B(2): '))
     if caminho == 1:
-        salario = 50*(30-10)
-        print('Seu salário será de após os impostos serem cobrados: R${}'.format(salario))
+        salario = (50*20)+((50/2)*10)
+        print('Seu salário será de R${} após os impostos serem cobrados'.format(salario))
     else:
-        salario = 50*(25-5)
-        print('Seu salário será de após os impostos serem cobrados: R${}'.format(salario))
+        salario = (50*20)+((50/2)*5)
+        print('Seu salário será de R${} após os impostos serem cobrados'.format(salario))
         
 elif profissao == 4:
     print('Sua profissão será Professor!')
     caminho = int(input('escolha o caminho A(1) ou B(2): '))
     if caminho == 1:
-        salario = 24*(30-10)
-        print('Seu salário será de após os impostos serem cobrados: R${}'.format(salario))
+        salario = (24*20)+((24/2)*10)
+        print('Seu salário será de R${} após os impostos serem cobrados'.format(salario))
     else:
-        salario = 24*(25-5)
-        print('Seu salário será de após os impostos serem cobrados: R${}'.format(salario))
+        salario = (24*20)+((24/2)*5)
+        print('Seu salário será de R${} após os impostos serem cobrados'.format(salario))
 
 elif profissao == 5:
     print('Sua profissão será Físico!')
     caminho = int(input('escolha o caminho A(1) ou B(2): '))
     if caminho == 1:
-        salario = 30*(30-10)
-        print('Seu salário será de após os impostos serem cobrados: R${}'.format(salario))
+        salario = (30*20)+((30/2)*10)
+        print('Seu salário será de R${} após os impostos serem cobrados'.format(salario))
     else:
-        salario = 30*(25-5)
-        print('Seu salário será de após os impostos serem cobrados: R${}'.format(salario))
+        salario = (30*20)+((30/2)*5)
+        print('Seu salário será de R${} após os impostos serem cobrados'.format(salario))
 
 elif profissao == 6:
     print('Sua profissão será Comerciante!')
     caminho = int(input('escolha o caminho A(1) ou B(2): '))
     if caminho == 1:
-        salario = 12*(30-10)
-        print('Seu salário será de após os impostos serem cobrados: R${}'.format(salario))
+        salario = (12*20)+((12/2)*10)
+        print('Seu salário será de R${} após os impostos serem cobrados'.format(salario))
     else:
-        salario = 12*(25-5)
-        print('Seu salário será de após os impostos serem cobrados: R${}'.format(salario))
+        salario = (12*20)+((12/2)*5)
+        print('Seu salário será de R${} após os impostos serem cobrados'.format(salario))
 
 else:
     print('Sua profissão será Estudante!')
     caminho = int(input('escolha o caminho A(1) ou B(2): '))
     if caminho == 1:
-        salario = 16*(30-10)
-        print('Seu salário será de após os impostos serem cobrados: R${}'.format(salario))
+        salario = (16*20)+((16/2)*10)
+        print('Seu salário será de R${} após os impostos serem cobrados'.format(salario))
     else:
-        salario = 16*(25-5)
-        print('Seu salário será de após os impostos serem cobrados: R${}'.format(salario))
+        salario = (16*20)+((16/2)*5)
+        print('Seu salário será de R${} após os impostos serem cobrados'.format(salario))

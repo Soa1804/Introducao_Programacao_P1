@@ -21,12 +21,14 @@ escola no dia 07/06/2021.'''
 #dias quentes leva mais 40 minutos
 #sem café leva aumaenta 20 minutos
 #10 minutos por trocas de ptialina
+#se tiver onça 30
 
 print('No dia 07/06/2021, desceva como ele começou até chegar a escola')
 botina = int(input('Você calçou a botina? sim(1) ou não(2): '))
 cavalo = int(input('Você foi de cavalo? sim(1) ou não(2): '))
 dias_quente = int(input('O dia foi quente? sim(1) ou não(2): '))
 cafe = int(input('Você tomou café da manhã? sim(1) ou não(2): '))
+onca = int(input('Você encontrou alguma onça? se sim(1) se não(2): '))
 rosinha = int(input('Você se encontrou com a rosinha? sim(1) ou não(2): '))
 
 tempo_total = 0
@@ -37,9 +39,9 @@ else:
     tempo_total+=50    
     
 if cavalo == 1:
-    tempo_total-=30
+    tempo_total = tempo_total - tempo_total + 30
 else:
-    tempo_total+=0 
+    tempo_total+=0
                
 if dias_quente == 1:
     tempo_total+=40
@@ -55,6 +57,11 @@ if rosinha == 1:
     ptialina = int(input('Quantas ptialina vocês trocaram? '))
     total_ptialina = ptialina*10
     tempo_total+=total_ptialina
+else:
+    tempo_total+=0
+
+if onca == 1:
+    tempo_total-=30
 else:
     tempo_total+=0
 

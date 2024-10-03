@@ -20,36 +20,35 @@ entre o Mago e o gênio e a segunda entre o dragão e o ser elétrico da escurid
 programa que determine o nível de poder de cada carta e o vencedor do duelo.
 PS: Nenhuma carta tem poder inferior a 1000 ou superior a 4000.'''
 
-mago_negro = float(input('Digite o valor da carta Mago Negro, poder deve estar entre 1000 e 4000: '))
-poder_raios = float(input('Digite o valor da carta invocador de poder de raio, poder deve estar entre 1000 e 4000: '))
-dragao = float(input('Digite o valor da carta Dragão, poder deve estar entre 1000 e 4000: '))
-genio_magico = float(input('Digite o valor da carta Gênio Mágico, poder deve estar entre 1000 e 4000: '))
+import random
+
+mago_negro = int(random.randint(1000, 4000))
+poder_raios = int(random.randint(1000, 4000))
+dragao = int(random.randint(1000, 4000))
+genio_magico = int(random.randint(1000, 4000))
 
 farao = 0
 vizir = 0
-if (mago_negro<1000 or mago_negro>4000 or poder_raios<1000 or poder_raios>4000 or dragao<1000 or dragao>4000 or genio_magico<1000 or genio_magico>4000):
-    print('Algum dos poderes é menor que 1000 ou maior que 4000, impossível definir vencedor!!!')
 
+print('DUELO 1: Mago Negro X Gênio Mágico, FIGHT')
+if mago_negro > genio_magico:
+    print('Mago Negro Venceu!!!')
+    farao+=1
+elif genio_magico > mago_negro:
+    print('Gênio Venceu!!!')
+    vizir+=1
 else:
-    print('DUELO 1: Mago Negro X Gênio Mágico, FIGHT')
-    if mago_negro > genio_magico:
-        print('Mago Negro Venceu!!!')
-        farao+=1
-    elif genio_magico > mago_negro:
-        print('Gênio Venceu!!!')
-        vizir+=1
-    else:
-        print('Deu empate!!!')
-    
-    print('DUELO 2: Dragão X Ser Elétrico da escuridão, FIGHT')
-    if poder_raios > dragao:
-        print('Ser Elétrico da escuridão Venceu!!!')
-        farao+=1
-    elif dragao > poder_raios:
-        print('Dragão Venceu!!!')
-        vizir+=1
-    else:
-        print('Deu empate!!!')
+    print('Deu empate!!!')
+
+print('DUELO 2: Dragão X Ser Elétrico da escuridão, FIGHT')
+if poder_raios > dragao:
+    print('Ser Elétrico da escuridão Venceu!!!')
+    farao+=1
+elif dragao > poder_raios:
+    print('Dragão Venceu!!!')
+    vizir+=1
+else:
+    print('Deu empate!!!')
         
 if farao > vizir:
     print('Faraó Vencer a batalha com as cartas Mago negro com {} pontos e Invocador de Raios com {} pontos'.format(mago_negro, poder_raios))

@@ -33,7 +33,6 @@ elif aperto_1 == 3:
     botao_3+=1
 else:
     print('infelizmente foi apertado um número diferente dos que são permitidos. Tente de novo!')
-    exit()
     
 if aperto_2 == 1:
     botao_1+=1
@@ -43,7 +42,6 @@ elif aperto_2 == 3:
     botao_3+=1
 else:
     print('infelizmente foi apertado um número diferente dos que são permitidos. Tente de novo!')
-    exit()
     
 if aperto_3 == 1:
     botao_1+=1
@@ -53,7 +51,6 @@ elif aperto_3 == 3:
     botao_3+=1
 else:
     print('infelizmente foi apertado um número diferente dos que são permitidos. Tente de novo!')
-    exit()
 
 if aperto_4 == 1:
     botao_1+=1
@@ -63,7 +60,6 @@ elif aperto_4 == 3:
     botao_3+=1
 else:
     print('infelizmente foi apertado um número diferente dos que são permitidos. Tente de novo!')
-    exit()
     
 valor_total= 350*botao_1 + 120*botao_2 + 50*botao_3
 

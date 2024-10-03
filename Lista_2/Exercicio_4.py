@@ -16,8 +16,6 @@ escolha_3 = int(input('Digite o número do terceiro pastel pastel 3: '))
 escolha_4 = int(input('Digite o número do quarto pastel pastel 4: '))
 escolha_5 = int(input('Digite o número do quinto pastel pastel 5: '))
 
-pasteis = [escolha_1, escolha_2, escolha_3, escolha_4, escolha_5]
-
 carne = 0
 queijo = 0
 frango = 0
